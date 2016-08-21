@@ -1,0 +1,73 @@
+body {
+    background: url("../images/bg-body-default.jpg") center;
+}
+
+.top-area {
+    font-family: 'Homemade Apple', cursive;
+    position: relative;
+    margin-top: 120px;
+}
+
+.north-west {
+    position: absolute;
+    left: 225px;
+    top: 0;
+    background: url("../images/north_west.png") center;
+    width: 104px;
+    height: 105px;
+    padding-top: 15px;
+    transition: transform 0.15s;
+    cursor: pointer;
+}
+
+.north {
+    position: absolute;
+    left: 370px;
+    top: 0;
+    background: url("../images/north.png") center;
+    width: 117px;
+    height: 79px;
+    padding-top: 15px;
+    transition: transform 0.15s;
+    cursor: pointer;
+}
+
+.north-east {
+    position: absolute;
+    left: 520px;
+    top: -10px;
+    background: url("../images/north_east.png") center;
+    width: 96px;
+    height: 111px;
+    padding-top: 25px;
+    transition: transform 0.15s;
+    cursor: pointer;
+}
+
+.north-west a, .north a, .north-east a {
+    margin-left: 30px;
+    margin-top: 200px;
+    color: #b35d63;
+}
+
+.north-west a:hover, .north a:hover, .north-east a:hover{
+    text-decoration: none;
+    color: #8c3e3e;
+}
+
+.north-west:hover, .north:hover, .north-east:hover {
+    transform: translateY(-15px);
+}
+
+.center-logo {
+    position: absolute;
+    left: 50%;
+    margin-top: 35px;
+    transform: translateX(-256px);
+}
+
+@media (min-width: 1200px) {
+    .container{
+        max-width: 900px;
+    }
+}
