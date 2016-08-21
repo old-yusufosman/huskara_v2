@@ -134,12 +134,28 @@ p {
 .intro {
     position: relative;
     text-align: center;
+    margin-bottom: 100px;
 }
 
 .intro p {
     padding: 0 100px;
     margin: 20px 0;
 }
+
+.social {
+    text-align: center;
+}
+
+.social span {
+    color: #cf3a30;
+    transition: color 0.5s;
+    cursor: pointer;
+}
+
+.social span:hover {
+    color: #464646;
+}
+
 
 .footer {
     margin-top: 200px;
