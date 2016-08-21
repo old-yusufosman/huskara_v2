@@ -16,6 +16,7 @@ body {
     width: 104px;
     height: 105px;
     padding-top: 15px;
+    padding-left: 30px;
     transition: transform 0.15s;
     cursor: pointer;
 }
@@ -28,6 +29,7 @@ body {
     width: 117px;
     height: 79px;
     padding-top: 15px;
+    padding-left: 30px;
     transition: transform 0.15s;
     cursor: pointer;
 }
@@ -40,13 +42,12 @@ body {
     width: 96px;
     height: 111px;
     padding-top: 25px;
+    padding-left: 30px;
     transition: transform 0.15s;
     cursor: pointer;
 }
 
 .north-west a, .north a, .north-east a {
-    margin-left: 30px;
-    margin-top: 200px;
     color: #b35d63;
 }
 
@@ -57,6 +58,59 @@ body {
 
 .north-west:hover, .north:hover, .north-east:hover {
     transform: translateY(-15px);
+}
+
+.south-west {
+    position: absolute;
+    left: 225px;
+    top: 375px;
+    background: url("../images/south_west.png") center;
+    width: 115px;
+    height: 89px;
+    padding-top: 40px;
+    padding-left: 30px;
+    transition: transform 0.15s;
+    cursor: pointer;
+}
+
+.south {
+    position: absolute;
+    left: 370px;
+    top: 375px;
+    background: url("../images/south.png") center;
+    width: 113px;
+    height: 79px;
+    padding-top: 40px;
+    padding-left: 30px;
+    transition: transform 0.15s;
+    cursor: pointer;
+}
+
+.south-east {
+    position: absolute;
+    left: 520px;
+    top: 360px;
+    background: url("../images/south_east.png") center;
+    width: 93px;
+    height: 88px;
+    padding-top: 50px;
+    padding-left: 20px;
+    transition: transform 0.15s;
+    cursor: pointer;
+}
+
+.south-west a, .south a, .south-east a {
+    color: #b35d63;
+}
+
+.south-west a:hover, .south a:hover, .south-east a:hover{
+    text-decoration: none;
+    color: #8c3e3e;
+}
+
+
+.south-west:hover, .south:hover, .south-east:hover {
+    transform: translateY(15px);
 }
 
 .center-logo {
