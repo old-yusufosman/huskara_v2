@@ -1,15 +1,25 @@
+@font-face {
+    font-family: "Brand Standard";
+    src: url("../fonts/BrandStandard.otf");
+}
+
 body {
     background: url("../images/bg-body-default.jpg") center;
 }
 
 h1 {
-    font-family: 'Poiret One', cursive;
-    color: #7c6d4c;
+    font-family: 'Brand Standard', cursive;
+    color: #bbad92;
+    font-size: 80px;
 }
 
 p {
     font-family: "Open Sans", Helvetica, Arial, sans-serif;
     color: #b2afa9;
+}
+
+.container{
+    position: relative;
 }
 
 .top-area {
@@ -19,10 +29,10 @@ p {
     height: 550px;
 }
 
-.north-west {
+#north-west {
     position: absolute;
     left: 225px;
-    top: 0;
+    top: 60px;
     background: url("../images/north-west.png") center;
     width: 104px;
     height: 105px;
@@ -32,10 +42,10 @@ p {
     cursor: pointer;
 }
 
-.north {
+#north {
     position: absolute;
     left: 370px;
-    top: 0;
+    top: 60px;
     background: url("../images/north.png") center;
     width: 117px;
     height: 79px;
@@ -45,10 +55,10 @@ p {
     cursor: pointer;
 }
 
-.north-east {
+#north-east {
     position: absolute;
     left: 520px;
-    top: -10px;
+    top: 50px;
     background: url("../images/north-east.png") center;
     width: 96px;
     height: 111px;
@@ -58,23 +68,23 @@ p {
     cursor: pointer;
 }
 
-.north-west a, .north a, .north-east a {
+#north-west a, #north a, #north-east a {
     color: #b35d63;
 }
 
-.north-west a:hover, .north a:hover, .north-east a:hover{
+#north-west a:hover, #north a:hover, #north-east a:hover{
     text-decoration: none;
     color: #8c3e3e;
 }
 
-.north-west:hover, .north:hover, .north-east:hover {
+#north-west:hover, #north:hover, #north-east:hover {
     transform: translateY(-15px);
 }
 
-.south-west {
+#south-west {
     position: absolute;
     left: 225px;
-    top: 375px;
+    top: 305px;
     background: url("../images/south-west.png") center;
     width: 115px;
     height: 89px;
@@ -84,10 +94,10 @@ p {
     cursor: pointer;
 }
 
-.south {
+#south {
     position: absolute;
     left: 370px;
-    top: 375px;
+    top: 305px;
     background: url("../images/south.png") center;
     width: 113px;
     height: 79px;
@@ -97,10 +107,10 @@ p {
     cursor: pointer;
 }
 
-.south-east {
+#south-east {
     position: absolute;
     left: 520px;
-    top: 360px;
+    top: 300px;
     background: url("../images/south-east.png") center;
     width: 93px;
     height: 88px;
@@ -110,17 +120,17 @@ p {
     cursor: pointer;
 }
 
-.south-west a, .south a, .south-east a {
+#south-west a, #south a, #south-east a {
     color: #b35d63;
 }
 
-.south-west a:hover, .south a:hover, .south-east a:hover{
+#south-west a:hover, #south a:hover, #south-east a:hover{
     text-decoration: none;
     color: #8c3e3e;
 }
 
 
-.south-west:hover, .south:hover, .south-east:hover {
+#south-west:hover, #south:hover, #south-east:hover {
     transform: translateY(15px);
 }
 
@@ -131,15 +141,85 @@ p {
     transform: translateX(-256px);
 }
 
-.intro {
+.leaf-1 {
+    position: absolute;
+    background: url("../images/leaf-1.png") center;
+    width: 124px;
+    height: 152px;
+    top: 270px;
+    left: 140px;
+}
+
+.leaf-2 {
+    position: absolute;
+    background: url("../images/leaf-2.png") center;
+    width: 118px;
+    height: 144px;
+    top: -15px;
+    left: 605px;
+}
+
+.lemon {
+    position: absolute;
+    background: url("../images/lemon.png") center;
+    width: 118px;
+    height: 144px;
+    top: 300px;
+    left: 70px;
+}
+
+.berries {
+    position: absolute;
+    background: url("../images/berries.png") center;
+    width: 151px;
+    height: 78px;
+    top: 390px;
+    left: 640px;
+}
+
+#parrot {
+    position: absolute;
+    background: url("../images/parrot.png") center;
+    width: 359px;
+    height: 293px;
+    top: -20px;
+    left: 610px;
+}
+
+#parrot-2 {
+    position: absolute;
+    background: url("../images/parrot-2.png") center;
+    width: 150px;
+    height: 128px;
+    top: 250px;
+    left: 200px;
+    /*opacity: 0.5;*/
+}
+
+#parrot-trigger {
+    position: absolute;
+    top:450px;
+}
+
+#intro {
     position: relative;
     text-align: center;
+    margin-top: 100px;
     margin-bottom: 100px;
 }
 
-.intro p {
+#intro p {
     padding: 0 100px;
+    font-size: 30px;
+    color: #635645;
     margin: 20px 0;
+}
+
+.bottles {
+    margin: 0 auto;
+    width: 478px;
+    height: 551px;
+    background: url("../images/bottles.jpg") center;
 }
 
 .social {
@@ -156,9 +236,40 @@ p {
     color: #464646;
 }
 
+.bottom-area {
+    position: relative;
+    margin-top: 200px;
+}
+
+#palm-tree {
+    position: absolute;
+    background: url("../images/palm-tree.png") center;
+    width: 339px;
+    height: 572px;
+    bottom: 20px;
+    left: 20px;
+    z-index: -1;
+}
+
+#pink-flower {
+    position: absolute;
+    background: url("../images/pink-flower.png") center;
+    width: 325px;
+    height: 229px;
+    bottom: 80px;
+    right: 20px;
+    /*opacity: 0.5;*/
+    z-index: -1;
+}
+
+#palm-trigger {
+    position: absolute;
+    top: -700px;
+    border: 1px solid black;
+}
+
 
 .footer {
-    margin-top: 200px;
     height: 171px;
     width: 100%;
     text-align: center;
