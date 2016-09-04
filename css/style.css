@@ -10,7 +10,7 @@ body {
 h1 {
     font-family: 'Brand Standard', cursive;
     color: #bbad92;
-    font-size: 80px;
+    font-size: 100px;
 }
 
 p {
@@ -198,7 +198,7 @@ p {
 
 #parrot-trigger {
     position: absolute;
-    top:450px;
+    top:50vh;
 }
 
 #intro {
