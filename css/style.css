@@ -12,12 +12,11 @@ h1 {
     font-family: 'Brand Standard', cursive;
     color: #bbad92;
     font-size: 80px;
-    margin-top: 100px;
 }
 
 p {
     font-family: "Open Sans", Helvetica, Arial, sans-serif;
-    color: #635645;;
+    color: #635645;
 }
 
 button:focus {outline:0; !important}
@@ -214,8 +213,12 @@ button:focus {outline:0; !important}
 
 #intro p {
     padding: 0 20px;
-    font-size: 30px;
+    font-size: 20px;
     margin: 20px 0;
+}
+
+#intro h1 {
+    margin-top: 80px;
 }
 
 .bottles {
@@ -238,8 +241,23 @@ button:focus {outline:0; !important}
     font-size: 20px;
 }
 
-.social {
+.social, .team {
     text-align: center;
+}
+
+
+.contact {
+    width: 100%;
+}
+
+.address {
+    float: left;
+    width: 400px
+}
+
+.newsletter {
+    float: right;
+    width: 400px
 }
 
 .social span {
@@ -290,6 +308,14 @@ button:focus {outline:0; !important}
     text-align: center;
     padding: 80px;
     background: url("../images/footer-bg.png") center;
+}
+
+.footer p{
+    color: #b2afa9;
+}
+
+#mc_embed_signup {
+    margin-top: 400px;
 }
 
 @media (min-width: 1200px) {
