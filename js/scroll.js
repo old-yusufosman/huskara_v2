@@ -67,7 +67,7 @@ var tween = new TimelineMax ()
 // build scene
 var scene = new ScrollMagic.Scene({triggerElement: "#parrot-trigger", duration: 400})
     .setTween(tween)
-    .addIndicators() // add indicators (requires plugin)
+    //.addIndicators() // add indicators (requires plugin)
     .addTo(controller);
 
 var tween = new TimelineMax ()

@@ -5,6 +5,7 @@
 
 body {
     background: url("../images/bg-body-default.jpg") center;
+    background-color: #ececea;
 }
 
 h1 {
@@ -17,6 +18,8 @@ p {
     font-family: "Open Sans", Helvetica, Arial, sans-serif;
     color: #b2afa9;
 }
+
+button:focus {outline:0; !important}
 
 .container{
     position: relative;
