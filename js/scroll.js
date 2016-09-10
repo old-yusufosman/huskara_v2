@@ -25,7 +25,7 @@ var scene = new ScrollMagic.Scene({
 var scene = new ScrollMagic.Scene({
     triggerElement: "#nav-trigger"
 })
-    .setTween("#south-west", 0.5, {opacity: 1.0, top: 375}) // trigger a TweenMax.to tween
+    .setTween("#south-west", 0.5, {opacity: 1.0, top: 365}) // trigger a TweenMax.to tween
     //.addIndicators({name: "1 (duration: 0)"}) // add indicators (requires plugin)
     .addTo(controller);
 

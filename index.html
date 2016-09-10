@@ -8,12 +8,12 @@
     <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Homemade+Apple|Open+Sans|Poiret+One" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css"/>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css"/>
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"-->
+          <!--integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">-->
     <script src="https://use.fontawesome.com/a34abc4a90.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
+    <link rel="stylesheet" href="css/style.css"/>
 
     <!-- Favicon -->
     <link rel="apple-touch-icon-precomposed" sizes="57x57" href="apple-touch-icon-57x57.png" />
@@ -46,6 +46,7 @@
 </head>
 
 <body>
+<div id="parrot-trigger"></div>
 <div class="container">
     <div class="top-area">
         <div id="nav-trigger"></div>
@@ -70,7 +71,6 @@
             <a>contact</a>
         </div>
         <div class="center-logo">
-            <img src="images/logo_card.png"/>
         </div>
         <div class="leaf-1"></div>
         <div class="lemon"></div>
@@ -78,21 +78,24 @@
         <div id="parrot"></div>
         <br style="clear:both"/>
     </div>
-    <div id="parrot-trigger"></div>
     <div class="main-content">
-        <div id="intro-trigger"></div>
+        <div id="intro-trigger">
+        </div>
+        <div id="logo">
+            <img src="images/logo_card.png" width="100%"/>
+        </div>
         <div id="intro">
             <!--<p>Spanish for ‘peel’ or ‘husk’, Cascara is the bright red outer layer of the coffee berry.</p>-->
             <!--<p>Normally, when making coffee, the bean inside the coffee berry is harvested and roasted, and the nutrient rich outer peel is discarded.-->
             <!--We were determined to harness the many health benefits of the berry and to increase the economic value of-->
             <!--the coffee plant to local farmers - and that is why we developed a new soft drink called Huskara.</p>-->
-            <div style="float:left; width: 400px;">
+            <div class="intro-text">
                 <h1>Drink Better</h1>
                 <p>A refreshing infusion of water and coffee berries with a hint of natural fruit juice</p>
                 <p>Packed with vitamins and antioxidants, Huskara is naturally caffeinated leaving you alert, healthy and ready for your day!</p>
             </div>
-            <div style="float:right;">
-                <img src="images/bottles.jpg" width="400"/>
+            <div class="intro-bottles">
+                <img src="images/bottles.jpg" width="80%"/>
             </div>
             <br style="clear:both"/>
         </div>
@@ -112,7 +115,7 @@
 
         <div id="team">
             <h1>Team</h1>
-            <img src="images/team.jpg"/>
+            <img class="team-image" src="images/team.jpg"/>
         </div>
 
 

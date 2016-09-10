@@ -4,19 +4,27 @@
 }
 
 body {
+    position: relative;
     background: url("../images/bg-body-default.jpg") center;
     background-color: #ececea;
+    margin: 1px;
 }
 
 h1 {
     font-family: 'Brand Standard', cursive;
     color: #bbad92;
     font-size: 80px;
+    font-weight: normal;
 }
 
 p {
     font-family: "Open Sans", Helvetica, Arial, sans-serif;
     color: #635645;
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
 }
 
 button:focus {outline:0; !important}
@@ -25,11 +33,13 @@ button:focus {outline:0; !important}
     position: relative;
 }
 
+.container{padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto;max-width: 900px;}
+
 .top-area {
     font-family: 'Homemade Apple', cursive;
     position: relative;
-    margin-top: 120px;
     height: 550px;
+    margin-top: 120px;
 }
 
 #north-west {
@@ -43,6 +53,7 @@ button:focus {outline:0; !important}
     padding-left: 30px;
     transition: transform 0.15s;
     cursor: pointer;
+    box-sizing: border-box;
 }
 
 #north {
@@ -56,6 +67,7 @@ button:focus {outline:0; !important}
     padding-left: 30px;
     transition: transform 0.15s;
     cursor: pointer;
+    box-sizing: border-box;
 }
 
 #north-east {
@@ -69,6 +81,7 @@ button:focus {outline:0; !important}
     padding-left: 30px;
     transition: transform 0.15s;
     cursor: pointer;
+    box-sizing: border-box;
 }
 
 #north-west a, #north a, #north-east a {
@@ -86,8 +99,8 @@ button:focus {outline:0; !important}
 
 #south-west {
     position: absolute;
-    left: 225px;
-    top: 305px;
+    left: 240px;
+    top: 280px;
     background: url("../images/south-west.png") center;
     width: 115px;
     height: 89px;
@@ -95,12 +108,13 @@ button:focus {outline:0; !important}
     padding-left: 30px;
     transition: transform 0.15s;
     cursor: pointer;
+    box-sizing: border-box;
 }
 
 #south {
     position: absolute;
-    left: 370px;
-    top: 305px;
+    left: 385px;
+    top: 290px;
     background: url("../images/south.png") center;
     width: 113px;
     height: 79px;
@@ -108,12 +122,13 @@ button:focus {outline:0; !important}
     padding-left: 30px;
     transition: transform 0.15s;
     cursor: pointer;
+    box-sizing: border-box;
 }
 
 #south-east {
     position: absolute;
-    left: 520px;
-    top: 300px;
+    left: 535px;
+    top: 285px;
     background: url("../images/south-east.png") center;
     width: 93px;
     height: 88px;
@@ -121,6 +136,7 @@ button:focus {outline:0; !important}
     padding-left: 20px;
     transition: transform 0.15s;
     cursor: pointer;
+    box-sizing: border-box;
 }
 
 #south-west a, #south a, #south-east a {
@@ -142,6 +158,14 @@ button:focus {outline:0; !important}
     left: 50%;
     margin-top: 35px;
     transform: translateX(-256px);
+    width: 512px;
+    height: 374px;
+    background: url("../images/logo_card.png") center;
+}
+
+#logo {
+    width: 100%;
+    display: none;
 }
 
 .leaf-1 {
@@ -173,7 +197,7 @@ button:focus {outline:0; !important}
 
 .berries {
     position: absolute;
-    background: url("../images/berries.png") center;
+    background: url("../images/berries.jpg") center;
     width: 151px;
     height: 78px;
     top: 390px;
@@ -213,12 +237,20 @@ button:focus {outline:0; !important}
 
 #intro p {
     padding: 0 20px;
-    font-size: 20px;
     margin: 20px 0;
 }
 
 #intro h1 {
     margin-top: 80px;
+}
+
+.intro-text {
+    float:left;
+    width: 400px;
+}
+
+.intro-bottles {
+    float:right;
 }
 
 .bottles {
@@ -237,9 +269,14 @@ button:focus {outline:0; !important}
     text-align: center;
 }
 
-.cascara p {
-    font-size: 20px;
+.product-embed__image {
+    margin: 0 auto;
+    border: solid;
 }
+
+/*.cascara p {*/
+    /*font-size: 20px;*/
+/*}*/
 
 .social, #team {
     text-align: center;
@@ -308,6 +345,7 @@ button:focus {outline:0; !important}
     text-align: center;
     padding: 80px;
     background: url("../images/footer-bg.png") center;
+    box-sizing: border-box;
 }
 
 .footer p{
@@ -318,8 +356,48 @@ button:focus {outline:0; !important}
     margin-top: 400px;
 }
 
-@media (min-width: 1200px) {
-    .container{
-        max-width: 900px;
+@media (max-width: 1055px) {
+    .top-area{
+        display: none;
+    }
+
+    .bottom-area {
+        display: none;
+    }
+
+    .team-image {
+        width: 100%;
+    }
+
+    #logo {
+        display: inline;
+        margin-top: 20px;
+    }
+
+    #logo img {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 850px) {
+    .intro-text {
+        float: none;
+        width: 100%;
+    }
+
+    .intro-bottles {
+        float: none;
+    }
+
+    .fa-3x {
+        font-size: 2em;
+    }
+
+    h1 {
+        font-size: 60px;
+    }
+
+    p {
+        font-size: 18px;
     }
 }
