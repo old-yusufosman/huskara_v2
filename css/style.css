@@ -241,7 +241,7 @@ button:focus {outline:0; !important}
     font-size: 20px;
 }
 
-.social, .team {
+.social, #team {
     text-align: center;
 }
 
