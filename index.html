@@ -46,112 +46,144 @@
 </head>
 
 <body>
-<div id="parrot-trigger"></div>
-<div class="container">
-    <div class="top-area">
-        <div id="nav-trigger"></div>
-        <div class="leaf-2"></div>
-        <div id="parrot-2"></div>
-        <div id="north-west">
-            <a>home</a>
-        </div>
-        <div id="north">
-            <a>about</a>
-        </div>
-        <div id="north-east">
-            <a href="#team">team</a>
-        </div>
-        <div id="south-west">
-            <a>shop</a>
-        </div>
-        <div id="south">
-            <a>find us</a>
-        </div>
-        <div id="south-east">
-            <a>contact</a>
-        </div>
-        <div class="center-logo">
-        </div>
-        <div class="leaf-1"></div>
-        <div class="lemon"></div>
-        <!--<div class="berries"></div>-->
-        <div id="parrot"></div>
-        <br style="clear:both"/>
-    </div>
-    <div class="main-content">
-        <div id="intro-trigger">
-        </div>
-        <div id="logo">
-            <img src="images/logo_card.png" width="100%"/>
-        </div>
-        <div id="intro">
-            <!--<p>Spanish for ‘peel’ or ‘husk’, Cascara is the bright red outer layer of the coffee berry.</p>-->
-            <!--<p>Normally, when making coffee, the bean inside the coffee berry is harvested and roasted, and the nutrient rich outer peel is discarded.-->
-            <!--We were determined to harness the many health benefits of the berry and to increase the economic value of-->
-            <!--the coffee plant to local farmers - and that is why we developed a new soft drink called Huskara.</p>-->
-            <div class="intro-text">
-                <h1>Drink Better</h1>
-                <p>A refreshing infusion of water and coffee berries with a hint of natural fruit juice</p>
-                <p>Packed with vitamins and antioxidants, Huskara is naturally caffeinated leaving you alert, healthy and ready for your day!</p>
+
+<nav id="menu">
+    <ul>
+        <li><a href="#">home</a></li>
+        <li><a href="#">about</a></li>
+        <li><a href="#team">team</a></li>
+        <li><a href="#shop-collection">shop</a></li>
+        <li><a href="#">find us</a></li>
+        <li><a href="#">about</a></li>
+    </ul>
+</nav>
+
+<div class="fixed mobile-nav">
+    <i class="fa fa-bars toggle-button fa-2x" aria-hidden="true"></i>
+</div>
+
+<main id="panel">
+    <div id="parrot-trigger"></div>
+    <div class="container">
+        <div class="top-area">
+            <div id="nav-trigger"></div>
+            <div class="leaf-2"></div>
+            <div id="parrot-2"></div>
+            <div id="north-west">
+                <a>home</a>
             </div>
-            <div class="intro-bottles">
-                <img src="images/bottles.jpg" width="80%"/>
+            <div id="north">
+                <a>about</a>
             </div>
+            <div id="north-east">
+                <a href="#team">team</a>
+            </div>
+            <div id="south-west">
+                <a>shop</a>
+            </div>
+            <div id="south">
+                <a>find us</a>
+            </div>
+            <div id="south-east">
+                <a>contact</a>
+            </div>
+            <div class="center-logo">
+            </div>
+            <div class="leaf-1"></div>
+            <div class="lemon"></div>
+            <!--<div class="berries"></div>-->
+            <div id="parrot"></div>
             <br style="clear:both"/>
         </div>
-        <div align="center">
-            <img src="images/berries.jpg" width="300px"/>
-        </div>
-
-        <div class="cascara">
-            <h1>Introducing Cascara</h1>
-            <br>
-            <p>Spanish for ‘peel’ or ‘husk’, cascara is the bright red outer layer of the coffee berry.</p>
-            <br>
-            <p>Normally, when making coffee, the bean inside the coffee berry is harvested and roasted, and the nutrient rich outer peel is discarded.
-                We were determined to harness the many health benefits of the berry and to increase the economic value of
-                the coffee plant to local farmers - and that is why we developed a new soft drink called Huskara.</p>
-        </div>
-
-        <div id="team">
-            <h1>Team</h1>
-            <img class="team-image" src="images/team.jpg"/>
-        </div>
-
-
-        <div class="shop-collection">
-            <h1>Shop</h1>
-            <div data-accent_color="767676" data-background_color="ffffff" data-button_background_color="7fb466"
-                 data-button_text_color="ffffff" data-cart_button_text="Cart" data-cart_title="Your cart"
-                 data-cart_total_text="Total" data-checkout_button_text="Checkout"
-                 data-discount_notice_text="Shipping and discount codes are added at checkout." data-embed_type="cart"
-                 data-empty_cart_text="Your cart is empty." data-shop="huskara.myshopify.com" data-sticky="true"
-                 data-text_color="000000"></div>
-            <div data-background_color="ffffff" data-button_background_color="7fb466" data-button_text_color="ffffff"
-                 data-buy_button_out_of_stock_text="Out of Stock" data-buy_button_product_unavailable_text="Unavailable"
-                 data-buy_button_text="Buy now" data-collection_handle="frontpage" data-display_size="compact"
-                 data-embed_type="collection" data-has_image="true" data-next_page_button_text="Next page"
-                 data-product_handle="" data-product_modal="true" data-product_name="" data-product_title_color="000000"
-                 data-redirect_to="modal" data-shop="huskara.myshopify.com"></div>
-            <script type="text/javascript">document.getElementById('ShopifyEmbedScript') || document.write('<script type="text/javascript" src="https://widgets.shopifyapps.com/assets/widgets/embed/client.js" id="ShopifyEmbedScript"><\/script>');</script>
-        </div>
-
-        <!-- Begin MailChimp Signup Form -->
-        <div id="mc_embed_signup">
-            <form action="//huskara.us14.list-manage.com/subscribe/post?u=203df81ea12f2627a37f5ab5f&amp;id=494756a973" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                <div id="mc_embed_signup_scroll">
-                    <label for="mce-EMAIL">Curious?  Sign up to our mailing list for more information.</label>
-                    <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
-                    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_203df81ea12f2627a37f5ab5f_494756a973" tabindex="-1" value=""></div>
-                    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+        <div class="main-content">
+            <div id="intro-trigger">
+            </div>
+            <div id="logo">
+                <img src="images/logo_card.png" width="100%"/>
+            </div>
+            <div id="intro">
+                <!--<p>Spanish for ‘peel’ or ‘husk’, Cascara is the bright red outer layer of the coffee berry.</p>-->
+                <!--<p>Normally, when making coffee, the bean inside the coffee berry is harvested and roasted, and the nutrient rich outer peel is discarded.-->
+                <!--We were determined to harness the many health benefits of the berry and to increase the economic value of-->
+                <!--the coffee plant to local farmers - and that is why we developed a new soft drink called Huskara.</p>-->
+                <div class="intro-text">
+                    <h1>Drink Better</h1>
+                    <p>A refreshing infusion of water and coffee berries with a hint of natural fruit juice</p>
+                    <p>Packed with vitamins and antioxidants, Huskara is naturally caffeinated leaving you alert,
+                        healthy and ready for your day!</p>
                 </div>
-            </form>
-        </div>
+                <div class="intro-bottles">
+                    <img src="images/bottles.jpg" width="80%"/>
+                </div>
+                <br style="clear:both"/>
+            </div>
+            <div align="center">
+                <img src="images/berries.jpg" width="300px"/>
+            </div>
 
-        <!--End mc_embed_signup-->
+            <div class="cascara">
+                <h1>Introducing Cascara</h1>
+                <br>
+                <p>Spanish for ‘peel’ or ‘husk’, cascara is the bright red outer layer of the coffee berry.</p>
+                <br>
+                <p>Normally, when making coffee, the bean inside the coffee berry is harvested and roasted, and the
+                    nutrient rich outer peel is discarded.
+                    We were determined to harness the many health benefits of the berry and to increase the economic
+                    value of
+                    the coffee plant to local farmers - and that is why we developed a new soft drink called
+                    Huskara.</p>
+            </div>
 
-        <div class="social">
+            <div id="team">
+                <h1>Team</h1>
+                <img class="team-image" src="images/team.jpg"/>
+            </div>
+
+
+            <div id="shop-collection">
+                <h1>Shop</h1>
+                <div data-accent_color="767676" data-background_color="ffffff" data-button_background_color="7fb466"
+                     data-button_text_color="ffffff" data-cart_button_text="Cart" data-cart_title="Your cart"
+                     data-cart_total_text="Total" data-checkout_button_text="Checkout"
+                     data-discount_notice_text="Shipping and discount codes are added at checkout."
+                     data-embed_type="cart"
+                     data-empty_cart_text="Your cart is empty." data-shop="huskara.myshopify.com" data-sticky="true"
+                     data-text_color="000000"></div>
+                <div data-background_color="ffffff" data-button_background_color="7fb466"
+                     data-button_text_color="ffffff"
+                     data-buy_button_out_of_stock_text="Out of Stock"
+                     data-buy_button_product_unavailable_text="Unavailable"
+                     data-buy_button_text="Buy now" data-collection_handle="frontpage" data-display_size="compact"
+                     data-embed_type="collection" data-has_image="true" data-next_page_button_text="Next page"
+                     data-product_handle="" data-product_modal="true" data-product_name=""
+                     data-product_title_color="000000"
+                     data-redirect_to="modal" data-shop="huskara.myshopify.com"></div>
+                <script type="text/javascript">document.getElementById('ShopifyEmbedScript') || document.write('<script type="text/javascript" src="https://widgets.shopifyapps.com/assets/widgets/embed/client.js" id="ShopifyEmbedScript"><\/script>');</script>
+            </div>
+
+            <!-- Begin MailChimp Signup Form -->
+            <div id="mc_embed_signup">
+                <form action="//huskara.us14.list-manage.com/subscribe/post?u=203df81ea12f2627a37f5ab5f&amp;id=494756a973"
+                      method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
+                      target="_blank" novalidate>
+                    <div id="mc_embed_signup_scroll">
+                        <label for="mce-EMAIL">Curious? Sign up to our mailing list for more information.</label>
+                        <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL"
+                               placeholder="email address" required>
+                        <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text"
+                                                                                                  name="b_203df81ea12f2627a37f5ab5f_494756a973"
+                                                                                                  tabindex="-1"
+                                                                                                  value=""></div>
+                        <div class="clear"><input type="submit" value="Subscribe" name="subscribe"
+                                                  id="mc-embedded-subscribe" class="button"></div>
+                    </div>
+                </form>
+            </div>
+
+            <!--End mc_embed_signup-->
+
+            <div class="social">
         <span class="fa-stack fa-3x">
             <i class="fa fa-circle-thin fa-stack-2x"></i>
             <i class="fa fa-twitter fa-stack-1x"></i>
@@ -168,20 +200,43 @@
             <i class="fa fa-circle-thin fa-stack-2x"></i>
             <i class="fa fa-envelope fa-stack-1x"></i>
         </span>
+            </div>
+            <br style="clear:both"/>
         </div>
-        <br style="clear:both"/>
     </div>
-</div>
 
-<section class="bottom-area">
-    <div id="palm-trigger"></div>
-    <div id="palm-tree"></div>
-    <div id="pink-flower"></div>
-    <div class="footer">
-        <p>© 2016 Huskara™ is a trademark of Great Karoo Ltd.</p>
-        <p>All Rights Reserved</p>
-    </div>
-</section>
+    <section class="bottom-area">
+        <div id="palm-trigger"></div>
+        <div id="palm-tree"></div>
+        <div id="pink-flower"></div>
+        <div class="footer">
+            <p>© 2016 Huskara™ is a trademark of Great Karoo Ltd.</p>
+            <p>All Rights Reserved</p>
+        </div>
+    </section>
+</main>
+
+<script src="js/slideout.min.js"></script>
+<script>
+    var slideout = new Slideout({
+        'panel': document.getElementById('panel'),
+        'menu': document.getElementById('menu'),
+        'padding': 200,
+        'tolerance': 70
+    });
+
+    slideout.on('beforeopen', function() {
+        document.querySelector('.fixed').classList.add('fixed-open');
+    });
+
+    slideout.on('beforeclose', function() {
+        document.querySelector('.fixed').classList.remove('fixed-open');
+    });
+
+    document.querySelector('.toggle-button').addEventListener('click', function() {
+        slideout.toggle();
+    });
+</script>
 
 <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.4/TweenMax.min.js"></script>
@@ -189,7 +244,6 @@
 <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.min.js"></script>
 <script src="js/scroll.js"></script>
-<script src="js/slideout.min.js"></script>
 </body>
 
 </html>
