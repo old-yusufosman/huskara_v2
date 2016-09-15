@@ -45,14 +45,50 @@ var scene = new ScrollMagic.Scene({
 
 var tween = new TimelineMax ()
     .add([
-        TweenMax.fromTo("#intro", 0.5, {autoAlpha: 0.0}, {autoAlpha: 1, top:-100, ease: Linear.easeInOut})
+        TweenMax.fromTo("#intro", 0.5, {autoAlpha: 0.0}, {autoAlpha: 1, ease: Linear.easeInOut})
     ]);
 
 var scene = new ScrollMagic.Scene({
     triggerElement: "#intro-trigger"
 })
     .setTween(tween) // trigger a TweenMax.to tween
-    //.addIndicators({name: "1 (duration: 0)"}) // add indicators (requires plugin)
+    .addIndicators({name: "1 (duration: 0)"}) // add indicators (requires plugin)
+    .addTo(controller);
+
+var tween = new TimelineMax ()
+    .add([
+        TweenMax.fromTo(".cascara", 0.5, {autoAlpha: 0.0}, {autoAlpha: 1, ease: Linear.easeInOut})
+    ]);
+
+var scene = new ScrollMagic.Scene({
+    triggerElement: "#cascara-trigger"
+})
+    .setTween(tween) // trigger a TweenMax.to tween
+    .addIndicators({name: "1 (duration: 0)"}) // add indicators (requires plugin)
+    .addTo(controller);
+
+var tween = new TimelineMax ()
+    .add([
+        TweenMax.fromTo("#team", 0.5, {autoAlpha: 0.0}, {autoAlpha: 1, ease: Linear.easeInOut})
+    ]);
+
+var scene = new ScrollMagic.Scene({
+    triggerElement: "#team-trigger"
+})
+    .setTween(tween) // trigger a TweenMax.to tween
+    .addIndicators({name: "1 (duration: 0)"}) // add indicators (requires plugin)
+    .addTo(controller);
+
+var tween = new TimelineMax ()
+    .add([
+        TweenMax.fromTo("#shop-collection", 0.5, {autoAlpha: 0.0}, {autoAlpha: 1, ease: Linear.easeInOut})
+    ]);
+
+var scene = new ScrollMagic.Scene({
+    triggerElement: "#shop-trigger"
+})
+    .setTween(tween) // trigger a TweenMax.to tween
+    .addIndicators({name: "1 (duration: 0)"}) // add indicators (requires plugin)
     .addTo(controller);
 
 
