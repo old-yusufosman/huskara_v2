@@ -17,6 +17,9 @@ body {
     height: 100%;
 }
 
+input:focus, button:focus {outline:0;}
+
+
 #st-preloader {
     background: #FFF;
     bottom: 0;
@@ -487,6 +490,26 @@ button:focus {outline:0; !important}
 
 #mc_embed_signup {
     margin-top: 50px;
+}
+
+#mc_embed_signup input.email {
+    background-color: transparent;
+    border: 2px solid #abb0b2;
+    border-radius: 0;
+}
+
+#mc_embed_signup .button {
+    border-radius: 0;
+    background-color: transparent;
+    border: 2px solid #abb0b2;
+    color: #abb0b2;
+}
+
+#mc_embed_signup .button:hover {
+    border-radius: 0;
+    background-color: #abb0b2;
+    border: 2px solid #abb0b2;
+    color: white;
 }
 
 
