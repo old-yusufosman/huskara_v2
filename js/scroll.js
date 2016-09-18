@@ -106,7 +106,7 @@ var scene = new ScrollMagic.Scene({
 var tween = new TimelineMax ()
     .add([
         //TweenMax.fromTo("#polaroid1", 0.5, {autoAlpha: 0.0}, {autoAlpha: 1, ease: Linear.easeInOut})
-        TweenMax.fromTo("#polaroid1", 0.2, {scale: 1.2, autoAlpha: 0.0, top: 650}, {scale: 1, autoAlpha: 1, top:450, ease: Linear.easeInOut})
+        TweenMax.fromTo("#polaroid1", 0.2, {scale: 1.2, autoAlpha: 0.0, top: 650, }, {scale: 1, autoAlpha: 1, top:450, ease: Linear.easeInOut})
     ]);
 
 var scene = new ScrollMagic.Scene({
@@ -133,7 +133,7 @@ var scene = new ScrollMagic.Scene({
 var tween = new TimelineMax ()
     .add([
         //TweenMax.fromTo("#polaroid1", 0.5, {autoAlpha: 0.0}, {autoAlpha: 1, ease: Linear.easeInOut})
-        TweenMax.fromTo("#polaroid3", 0.2, {scale: 1.2, autoAlpha: 0.0, top: 2000}, {scale: 1, autoAlpha: 1, top:2200, ease: Linear.easeInOut})
+        TweenMax.fromTo("#polaroid3", 0.2, {scale: 1.2, autoAlpha: 0.0, top: 2800}, {scale: 1, autoAlpha: 1, top:3000, ease: Linear.easeInOut})
     ]);
 
 var scene = new ScrollMagic.Scene({
@@ -146,14 +146,14 @@ var scene = new ScrollMagic.Scene({
 var tween = new TimelineMax ()
     .add([
         //TweenMax.fromTo("#polaroid1", 0.5, {autoAlpha: 0.0}, {autoAlpha: 1, ease: Linear.easeInOut})
-        TweenMax.fromTo("#polaroid4", 0.2, {scale: 1.2, autoAlpha: 0.0, top: 3700}, {scale: 1, autoAlpha: 1, top:3500, ease: Linear.easeInOut})
+        TweenMax.fromTo("#polaroid4", 0.2, {scale: 1.2, autoAlpha: 0.0, top: 4250}, {scale: 1, autoAlpha: 1, top:4450, ease: Linear.easeInOut})
     ]);
 
 var scene = new ScrollMagic.Scene({
     triggerElement: "#polaroid4-trigger"
 })
     .setTween(tween)
-    .addIndicators({name: "1 (duration: 0)"}) // add indicators (requires plugin)
+    //.addIndicators({name: "1 (duration: 0)"}) // add indicators (requires plugin)
     .addTo(controller);
 
 

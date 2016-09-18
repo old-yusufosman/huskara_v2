@@ -73,6 +73,10 @@ input:focus, button:focus {outline:0;}
     color: #807869;
 }
 
+#why-huskara {
+    margin-top: 150px;
+}
+
 #menu {
     display: none;
 }
@@ -378,7 +382,7 @@ button:focus {outline:0; !important}
     width: 408px;
     height: 450px;
     background-size: 408px 450px;
-    top: 2200px;
+    top: 3000px;
     left: -400px;
     transform: rotate(-10deg);
 }
@@ -389,7 +393,7 @@ button:focus {outline:0; !important}
     width: 408px;
     height: 450px;
     background-size: 408px 450px;
-    top: 3500px;
+    top: 4450px;
     right: -300px;
     transform: rotate(10deg);
 }
@@ -421,12 +425,12 @@ button:focus {outline:0; !important}
 
 #polaroid3-trigger {
      position: absolute;
-     top:2200px;
+     top:3000px;
 }
 
 #polaroid4-trigger {
     position: absolute;
-    top:3500px;
+    top:4450px;
 }
 
 #navbar-trigger {
@@ -458,7 +462,7 @@ button:focus {outline:0; !important}
     margin: 0 auto;
 }
 
-.cascara p, #team p {
+.cascara p, #team p, .first-right p, .second-left p, .third-right p {
     font-size: 24px;
 }
 
@@ -616,6 +620,32 @@ button:focus {outline:0; !important}
     color: white;
 }
 
+.first-left, .third-left {
+    width: 212px;
+    box-sizing: border-box;
+    float: left;
+}
+
+.first-right, .third-right {
+    padding: 20px;
+    width: 600px;
+    float: right;
+    box-sizing: border-box;
+}
+
+.second-left {
+    width: 600px;
+    padding: 20px;
+    float: left;
+    box-sizing: border-box;
+}
+
+.second-right {
+    width: 212px;
+    float: right;
+    box-sizing: border-box;
+}
+
 
 @media (max-width: 1280px) {
     #palm-tree{
@@ -624,6 +654,10 @@ button:focus {outline:0; !important}
 }
 
 @media (max-width: 1055px) {
+    #polaroid1,#polaroid2,#polaroid3,#polaroid4 {
+        display: none;
+    }
+
     #desktop-nav {
         display: none;
     }
