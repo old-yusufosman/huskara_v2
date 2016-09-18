@@ -134,7 +134,7 @@ input:focus, button:focus {outline:0;}
     width: 100%;
     top: 0;
     left: 0;
-    background-color: rgba(58, 58, 58, 0.75);
+    background-color: rgba(58, 58, 58, 0.85);
 }
 
 .berries-mobile {
@@ -406,6 +406,25 @@ button:focus {outline:0; !important}
 
 .cascara h1 {
     margin-bottom: 0;
+}
+
+.top-nav-list {
+    list-style-type: none;
+    text-align: center;
+}
+
+.top-nav-list li {
+    display: inline-block;
+}
+
+.top-nav-list li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 0 26px;
+    text-decoration: none;
+    font-weight: bolder;
+    text-transform: uppercase;
 }
 
 #shop-collection {
