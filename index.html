@@ -49,6 +49,10 @@
 <body>
 
 <div id="parrot-trigger"></div>
+<div id="polaroid1-trigger"></div>
+<div id="polaroid2-trigger"></div>
+<div id="polaroid3-trigger"></div>
+<div id="polaroid4-trigger"></div>
 
 <div id="navbar-trigger">
 </div>
@@ -118,6 +122,10 @@
             <div id="parrot"></div>
             <br style="clear:both"/>
         </div>
+        <div id="polaroid1"></div>
+        <div id="polaroid2"></div>
+        <div id="polaroid3"></div>
+        <div id="polaroid4"></div>
         <div class="main-content">
             <div id="intro-trigger">
             </div>
@@ -209,19 +217,19 @@
             <!--End mc_embed_signup-->
 
             <div class="social">
-        <span class="fa-stack fa-3x">
+        <span class="fa-stack fa-3x" onclick="location.href='https://twitter.com/HuskaraDrink';" style="cursor: pointer;">
             <i class="fa fa-circle-thin fa-stack-2x"></i>
             <i class="fa fa-twitter fa-stack-1x"></i>
         </span>
-        <span class="fa-stack fa-3x">
+        <span class="fa-stack fa-3x" onclick="location.href='https://www.instagram.com/huskaradrink/';" style="cursor: pointer;">
             <i class="fa fa-circle-thin fa-stack-2x"></i>
             <i class="fa fa-facebook fa-stack-1x"></i>
         </span>
-        <span class="fa-stack fa-3x">
+        <span class="fa-stack fa-3x" onclick="location.href='https://twitter.com/HuskaraDrink';" style="cursor: pointer;">
             <i class="fa fa-circle-thin fa-stack-2x"></i>
             <i class="fa fa-instagram fa-stack-1x"></i>
         </span>
-        <span class="fa-stack fa-3x">
+        <span class="fa-stack fa-3x" onclick="email()" style="cursor: pointer;">
             <i class="fa fa-circle-thin fa-stack-2x"></i>
             <i class="fa fa-envelope fa-stack-1x"></i>
         </span>
@@ -243,6 +251,10 @@
 
 <script src="js/slideout.min.js"></script>
 <script>
+    function email() {
+        window.open("mailto:?subject=hello&body=hello_self");
+    }
+
     var slideout = new Slideout({
         'panel': document.getElementById('panel'),
         'menu': document.getElementById('menu'),

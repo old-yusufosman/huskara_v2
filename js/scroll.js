@@ -100,9 +100,61 @@ var scene = new ScrollMagic.Scene({
     triggerElement: "#navbar-trigger"
 })
     .setTween(tween) // trigger a TweenMax.to tween
+    //.addIndicators({name: "1 (duration: 0)"}) // add indicators (requires plugin)
+    .addTo(controller);
+
+var tween = new TimelineMax ()
+    .add([
+        //TweenMax.fromTo("#polaroid1", 0.5, {autoAlpha: 0.0}, {autoAlpha: 1, ease: Linear.easeInOut})
+        TweenMax.fromTo("#polaroid1", 0.2, {scale: 1.2, autoAlpha: 0.0, top: 650}, {scale: 1, autoAlpha: 1, top:450, ease: Linear.easeInOut})
+    ]);
+
+var scene = new ScrollMagic.Scene({
+    triggerElement: "#polaroid1-trigger"
+})
+    .setTween(tween)
+    //.addIndicators({name: "1 (duration: 0)"}) // add indicators (requires plugin)
+    .addTo(controller);
+
+
+var tween = new TimelineMax ()
+    .add([
+        //TweenMax.fromTo("#polaroid1", 0.5, {autoAlpha: 0.0}, {autoAlpha: 1, ease: Linear.easeInOut})
+        TweenMax.fromTo("#polaroid2", 0.2, {scale: 1.2, autoAlpha: 0.0, top: 1200}, {scale: 1, autoAlpha: 1, top:1400, ease: Linear.easeInOut})
+    ]);
+
+var scene = new ScrollMagic.Scene({
+    triggerElement: "#polaroid2-trigger"
+})
+    .setTween(tween)
     .addIndicators({name: "1 (duration: 0)"}) // add indicators (requires plugin)
     .addTo(controller);
 
+var tween = new TimelineMax ()
+    .add([
+        //TweenMax.fromTo("#polaroid1", 0.5, {autoAlpha: 0.0}, {autoAlpha: 1, ease: Linear.easeInOut})
+        TweenMax.fromTo("#polaroid3", 0.2, {scale: 1.2, autoAlpha: 0.0, top: 2000}, {scale: 1, autoAlpha: 1, top:2200, ease: Linear.easeInOut})
+    ]);
+
+var scene = new ScrollMagic.Scene({
+    triggerElement: "#polaroid3-trigger"
+})
+    .setTween(tween)
+    .addIndicators({name: "1 (duration: 0)"}) // add indicators (requires plugin)
+    .addTo(controller);
+
+var tween = new TimelineMax ()
+    .add([
+        //TweenMax.fromTo("#polaroid1", 0.5, {autoAlpha: 0.0}, {autoAlpha: 1, ease: Linear.easeInOut})
+        TweenMax.fromTo("#polaroid4", 0.2, {scale: 1.2, autoAlpha: 0.0, top: 3200}, {scale: 1, autoAlpha: 1, top:3000, ease: Linear.easeInOut})
+    ]);
+
+var scene = new ScrollMagic.Scene({
+    triggerElement: "#polaroid4-trigger"
+})
+    .setTween(tween)
+    .addIndicators({name: "1 (duration: 0)"}) // add indicators (requires plugin)
+    .addTo(controller);
 
 
 
