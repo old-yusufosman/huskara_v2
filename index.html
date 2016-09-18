@@ -50,6 +50,9 @@
 
 <div id="parrot-trigger"></div>
 
+<div id="navbar-trigger">
+</div>
+
 <div id="st-preloader">
     <div id="pre-status">
         <div class="preload-placeholder"></div>
@@ -67,8 +70,14 @@
     </ul>
 </nav>
 
-<div class="fixed mobile-nav">
+<div class="fixed" id="mobile-nav">
     <i class="fa fa-bars toggle-button fa-2x" aria-hidden="true"></i>
+</div>
+
+<div class="fixed" id="desktop-nav">
+    <ul>
+        <li>Test</li>
+    </ul>
 </div>
 
 
@@ -81,20 +90,20 @@
             <div id="north-west">
                 <a>home</a>
             </div>
-            <div id="north">
-                <a href="#intro">drinks</a>
+            <div id="north" onclick="location.href='#intro';" style="cursor: pointer;">
+                <a>drinks</a>
             </div>
-            <div id="north-east">
-                <a href="#team">team</a>
+            <div id="north-east" onclick="location.href='#team';" style="cursor: pointer;">
+                <a>team</a>
             </div>
-            <div id="south-west">
-                <a href="#shop-collection">shop</a>
+            <div id="south-west" onclick="location.href='#shop-collection';" style="cursor: pointer;">
+                <a>shop</a>
             </div>
-            <div id="south">
+            <div id="south" onclick="location.href='#blog';" style="cursor: pointer;">
                 <a>blog</a>
             </div>
-            <div id="south-east">
-                <a href="#mc_embed_signup">contact</a>
+            <div id="south-east" onclick="location.href='#mc_embed_signup';" style="cursor: pointer;">
+                <a>contact</a>
             </div>
             <div class="center-logo">
             </div>

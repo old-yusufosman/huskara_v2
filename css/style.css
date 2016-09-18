@@ -105,7 +105,7 @@ input:focus, button:focus {outline:0;}
     display: block;
 }
 
-.mobile-nav {
+#mobile-nav {
     padding: 10px;
 }
 
@@ -120,13 +120,21 @@ input:focus, button:focus {outline:0;}
     transform: translate3d(200px, 0px, 0px);
 }
 
-.mobile-nav {
+#mobile-nav {
     text-align: center;
     width: 100%;
     top: 0;
     left: 0;
     background-color: rgba(58, 58, 58, 0.75);
     display: none;
+}
+
+#desktop-nav {
+    text-align: center;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(58, 58, 58, 0.75);
 }
 
 .berries-mobile {
@@ -137,7 +145,7 @@ input:focus, button:focus {outline:0;}
     display:none;
 }
 
-.mobile-nav .fa {
+#mobile-nav .fa {
     float: left;
     color: #fffef9;
     cursor: pointer;
@@ -354,6 +362,11 @@ button:focus {outline:0; !important}
     top:50vh;
 }
 
+#navbar-trigger {
+    position: absolute;
+    top:110vh;
+}
+
 #intro {
     position: relative;
     text-align: center;
@@ -515,7 +528,7 @@ button:focus {outline:0; !important}
 
 @media (max-width: 1280px) {
     #palm-tree{
-        display: none;
+        left: -30px;
     }
 }
 
@@ -546,7 +559,7 @@ button:focus {outline:0; !important}
         display:none;
     }
 
-    .mobile-nav {
+    #mobile-nav {
         display: inline;
     }
 
