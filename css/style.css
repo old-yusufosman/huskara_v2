@@ -22,6 +22,9 @@ body {
 
 input:focus, button:focus {outline:0;}
 
+#intro h2 {
+    font-family: 'Core Circus', sans-serif;
+}
 
 #st-preloader {
     background: #FFF;
@@ -137,6 +140,7 @@ input:focus, button:focus {outline:0;}
 }
 
 #desktop-nav {
+    font-family: 'Core Circus', sans-serif;
     text-align: center;
     width: 100%;
     top: 0;
@@ -652,6 +656,11 @@ button:focus {outline:0; !important}
     width: 212px;
     float: right;
     box-sizing: border-box;
+}
+
+.article-content p {
+    font-size: 14px;
+    text-align: justify;
 }
 
 
