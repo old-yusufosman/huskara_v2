@@ -371,7 +371,7 @@ button:focus {outline:0; !important}
 
 #polaroid2 {
     position: absolute;
-    background: url("../images/polaroid1.png") center;
+    background: url("../images/polaroid2.png") center;
     width: 408px;
     height: 450px;
     background-size: 408px 450px;
@@ -393,7 +393,7 @@ button:focus {outline:0; !important}
 
 #polaroid4 {
     position: absolute;
-    background: url("../images/polaroid1.png") center;
+    background: url("../images/polaroid4.png") center;
     width: 408px;
     height: 450px;
     background-size: 408px 450px;
